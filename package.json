@@ -1,0 +1,26 @@
+{
+  "name": "hexterm",
+  "version": "1.0.0",
+  "description": "Convert hex colors to closest xterm",
+  "main": "hexterm.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "keywords": ["hex", "colors", "xterm", "convert"],
+  "author": "Jacobo Tabernero - http://jacoborus.codes",
+  "license": "MIT",
+  "homepage": "https://github.com/jacoborus/hexterm",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacoborus/hexterm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jacoborus/hexterm/issues"
+  },
+  "dependencies": {
+    "xterm-colors": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
