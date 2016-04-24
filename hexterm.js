@@ -25,6 +25,10 @@ function hexColorDelta (hex1, hex2) {
 }
 
 module.exports = function (hex) {
+  if (typeof hex !== 'string') {
+    throw new Error('hex value has to be a string')
+  }
+  hex = hex.toLowerCase()
   // check if there is a direct correspondance
   const direct = xt.findIndex(color => color === hex)
   if (direct !== -1) return direct
