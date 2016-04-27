@@ -38,6 +38,9 @@ module.exports = function (hex) {
   if (!isHexColor(hex)) {
     throw new Error('wrong hexadecimal color code')
   }
+  if (hex.length === 3) {
+    hex = '' + hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2]
+  }
   hex = hex.toLowerCase()
   // check if there is a direct correspondance
   const direct = xt.findIndex(color => color === hex)

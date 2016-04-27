@@ -12,6 +12,7 @@ test('get closest xterm color', t => {
   t.is(hexterm('#ff87ff'), 213, 'with numeral')
   t.is(hexterm('#090909'), 232, 'with numeral')
   t.is(hexterm('#090909'), 232, 'with numeral')
+  t.is(hexterm('ff0'), 11, 'with numeral')
   t.end()
 })
 

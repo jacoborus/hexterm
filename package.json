@@ -1,6 +1,6 @@
 {
   "name": "hexterm",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert hex colors to closest xterm",
   "main": "hexterm.js",
   "scripts": {
