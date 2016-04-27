@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const hexterm = require('../hexterm.js')
+let out = ''
+try {
+  out += hexterm(process.argv[2])
+} catch (err) {
+  process.stderr.write(`(hexterm) Error: ${err}\n`)
+  process.exit(1)
+}
+
+process.stdout.write(`${out}\n`)

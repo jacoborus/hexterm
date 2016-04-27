@@ -1,12 +1,15 @@
 {
   "name": "hexterm",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Convert hex colors to closest xterm",
   "main": "hexterm.js",
   "scripts": {
     "test": "node tests.js"
   },
   "keywords": ["hex", "colors", "xterm", "convert"],
+  "bin": {
+    "hexterm": "./bin/hexterm"
+  },
   "author": "Jacobo Tabernero - http://jacoborus.codes",
   "license": "MIT",
   "homepage": "https://github.com/jacoborus/hexterm",

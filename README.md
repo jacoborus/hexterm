@@ -1,17 +1,19 @@
 hexterm
 =======
 
-Convert hexadecimal color codes to Xterm
+Get the xterm closest color to a hexadecimal color
 
-## Install
+## Usage
 
-Clone, download and extract or install with npm
+### Programatically
+
+Install locally
 
 ```sh
 npm install hexterm
 ```
 
-## Usage
+Require `hexterm` and pass a string to it
 
 ```js
 const hexterm = require('hexterm')
@@ -24,7 +26,35 @@ hexterm('#ff0') // 11
 ```
 
 
-<br><br>
+### CLI
+
+Install globally
+
+```sh
+npm install -g hexterm
+```
+
+Call from your shell: `hexterm <color>`
+
+```sh
+hexterm 005fd7
+```
+
+Remember to wrap the color code between quotes if has numeral prefix (`#`)
+
+```sh
+hexterm '#ff0'
+```
+
+## Test
+
+Install dev-dependencies and run tests
+
+```sh
+npm install && npm tst
+```
+
+<br>
 
 ---
 
