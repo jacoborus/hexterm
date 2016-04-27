@@ -17,7 +17,10 @@ npm install hexterm
 const hexterm = require('hexterm')
 
 hexterm('005fd7') // 26
+hexterm('#005fd7') // 26
 hexterm('005ED9') // 26
+hexterm('ff0') // 11
+hexterm('#ff0') // 11
 ```
 
 

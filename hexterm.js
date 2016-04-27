@@ -3,6 +3,10 @@
 const xt = require('xterm-colors')
 const cache = {}
 
+function isHexColor (color) {
+  return /^([0-9A-F]{6}|[0-9A-F]{3})$/i.test(color)
+}
+
 function hexColorDelta (hex1, hex2) {
   // get r/g/b int values of hex1
   let r1 = parseInt(hex1.substring(0, 2), 16)
@@ -27,6 +31,12 @@ function hexColorDelta (hex1, hex2) {
 module.exports = function (hex) {
   if (typeof hex !== 'string') {
     throw new Error('hex value has to be a string')
+  }
+  if (hex.startsWith('#')) {
+    hex = hex.slice(1)
+  }
+  if (!isHexColor(hex)) {
+    throw new Error('wrong hexadecimal color code')
   }
   hex = hex.toLowerCase()
   // check if there is a direct correspondance
