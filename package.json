@@ -5,7 +5,8 @@
   "main": "hexterm.js",
   "scripts": {
     "test": "jest",
-    "linter": "eslint hexterm.ts bin/hexterm test.ts"
+    "linter": "eslint hexterm.ts bin/hexterm test.ts",
+    "build": "tsc"
   },
   "keywords": [
     "hex",

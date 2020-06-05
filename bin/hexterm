@@ -2,7 +2,7 @@
 
 'use strict'
 
-const hexterm = require('../hexterm.js')
+const hexterm = require('../lib/hexterm.js')
 let out = ''
 try {
   out += hexterm(process.argv[2])
