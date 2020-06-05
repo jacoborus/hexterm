@@ -23,7 +23,7 @@ test('throw error on wrong hex value', () => {
 })
 
 test('throw error on bad hex type', () => {
-  expect(() => hexterm(1)).toThrow(/hex value has to be a string/)
-  expect(() => hexterm(new Date())).toThrow(/hex value has to be a string/)
-  expect(() => hexterm({})).toThrow(/hex value has to be a string/)
+  expect(() => hexterm(1 as unknown as string)).toThrow(/hex value has to be a string/)
+  expect(() => hexterm(new Date() as unknown as string)).toThrow(/hex value has to be a string/)
+  expect(() => hexterm({} as unknown as string)).toThrow(/hex value has to be a string/)
 })

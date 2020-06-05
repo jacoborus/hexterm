@@ -1,6 +1,6 @@
 'use strict'
 
-const xt = require('xterm-colors')
+import xt from './xtermcolors.js'
 const cache = {}
 
 function isHexColor (color) {
