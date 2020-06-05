@@ -2,11 +2,20 @@
   "name": "hexterm",
   "version": "1.2.0",
   "description": "Convert hex colors to closest xterm",
-  "main": "hexterm.js",
+  "main": "lib/hexterm.js",
   "scripts": {
-    "test": "node tests.js"
+    "test": "npm run linter && jest",
+    "test:unit": "jest",
+    "linter": "eslint src/*.ts bin/hexterm",
+    "prepublishOnly": "npm run test && npm run build",
+    "build": "tsc"
   },
-  "keywords": ["hex", "colors", "xterm", "convert"],
+  "keywords": [
+    "hex",
+    "colors",
+    "xterm",
+    "convert"
+  ],
   "bin": {
     "hexterm": "./bin/hexterm"
   },
@@ -20,10 +29,19 @@
   "bugs": {
     "url": "https://github.com/jacoborus/hexterm/issues"
   },
-  "dependencies": {
-    "xterm-colors": "^1.0.0"
-  },
   "devDependencies": {
-    "tape": "^4.5.1"
+    "@types/jest": "25.2.3",
+    "@typescript-eslint/eslint-plugin": "3.1.0",
+    "@typescript-eslint/parser": "3.1.0",
+    "eslint": "7.1.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jest": "23.13.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "jest": "26.0.1",
+    "ts-jest": "26.1.0",
+    "typescript": "3.9.5"
   }
 }
