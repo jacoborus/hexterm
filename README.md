@@ -60,8 +60,6 @@ Install dev-dependencies and run tests
 npm install && npm tst
 ```
 
-<br>
-
 ---
 
-© 2016 [Jacobo Tabernero](https://github.com/jacoborus) - Released under [MIT License](https://raw.github.com/jacoborus/hexterm/master/LICENSE)
+© 2016-2020 [Jacobo Tabernero](https://github.com/jacoborus) - Released under [MIT License](https://raw.github.com/jacoborus/hexterm/master/LICENSE)
