@@ -2,10 +2,12 @@
   "name": "hexterm",
   "version": "1.2.0",
   "description": "Convert hex colors to closest xterm",
-  "main": "hexterm.js",
+  "main": "lib/hexterm.js",
   "scripts": {
-    "test": "jest",
+    "test": "npm run linter && jest",
+    "test:unit": "jest",
     "linter": "eslint src/*.ts bin/hexterm",
+    "prepublishOnly": "npm run test && npm run build",
     "build": "tsc"
   },
   "keywords": [
