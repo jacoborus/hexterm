@@ -28,7 +28,13 @@ hexterm('#ff0') // 11
 
 ### CLI
 
-Install globally
+#### npx
+
+```sh
+npx hexterm 005fd7
+```
+
+#### Install globally
 
 ```sh
 npm install -g hexterm
