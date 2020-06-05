@@ -3,6 +3,8 @@ hexterm
 
 Get the xterm closest color to a hexadecimal color
 
+[![Build Status](https://travis-ci.org/jacoborus/hexterm.svg?branch=master)](https://travis-ci.org/jacoborus/hexterm) [![npm version](https://badge.fury.io/js/hexterm.svg)](https://www.npmjs.com/package/hexterm)
+
 ## Usage
 
 ### Programatically
