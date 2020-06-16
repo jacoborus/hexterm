@@ -18,7 +18,7 @@ npm install hexterm
 Require `hexterm` and pass a string to it
 
 ```js
-const hexterm = require('hexterm')
+import hexterm from 'hexterm'
 
 hexterm('005fd7') // 26
 hexterm('#005fd7') // 26

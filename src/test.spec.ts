@@ -1,4 +1,4 @@
-import hexterm from './hexterm'
+import { hexterm } from './hexterm'
 
 describe('get closest xterm color', () => {
   test('no numeral values', () => {

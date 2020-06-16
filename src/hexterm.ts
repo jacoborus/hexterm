@@ -35,7 +35,7 @@ interface Closest {
   x: number
 }
 
-export default function (hex: string): number {
+export function hexterm (hex: string): number {
   if (typeof hex !== 'string') {
     throw new Error('hex value has to be a string')
   }
