@@ -68,6 +68,10 @@ Install dev-dependencies and run tests
 npm install && npm tst
 ```
 
+## Development
+
+Use [VR (Velociraptor)](https://velociraptor.run/) to run the scripts
+
 ---
 
 © 2016-2020 [Jacobo Tabernero](https://github.com/jacoborus) - Released under
