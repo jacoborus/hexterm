@@ -70,7 +70,11 @@ npm install && npm tst
 
 ## Development
 
-Use [VR (Velociraptor)](https://velociraptor.run/) to run the scripts
+Use [VR (Velociraptor)](https://velociraptor.run/) to run the scripts.
+
+```sh
+vr build # builds npm module in npm folder
+```
 
 ---
 

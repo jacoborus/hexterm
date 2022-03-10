@@ -6,7 +6,5 @@ scripts:
   pre-commit:
     cmd: vr prepare
     gitHook: pre-commit
-  npmpublish:
-    cmd:
-      - vr prepare && deno run -A src/build_npm.ts $1
-      - npm publish npm
+  buildnpm:
+    - vr prepare && deno run -A src/build_npm.ts $1
