@@ -1,19 +1,13 @@
 scripts:
-  test: deno test
-  lint: deno lint src
-  format:
-    - deno fmt src
-    - deno fmt README.md
-  build:
-    cmd:
+  prepare:
+      - deno lint
+      - deno fmt
       - deno test
-      - deno run -A src/build_npm.ts
   pre-commit:
+    cmd: vr prepare
+    gitHook: pre-commit
+  npmpublish:
     cmd:
-      - vr lint
-      - vr format
-  # publish:
-  #   cmd:
-  #     - vr build
-  #     - cd npm
-  #     - npm publish
+      - vr prepare
+      - deno run -A src/build_npm.ts $1
+      - npm publish npm

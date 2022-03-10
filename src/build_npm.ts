@@ -1,4 +1,10 @@
-import { build, emptyDir } from "https://deno.land/x/dnt/mod.ts";
+import { build, emptyDir } from "https://deno.land/x/dnt@0.21.2/mod.ts";
+import * as semver from "https://deno.land/x/semver@v1.4.0/mod.ts";
+
+const version = semver.clean(Deno.args[0]);
+if (!semver.valid(version)) {
+  throw new Error("Wrong version number: " + version);
+}
 
 await emptyDir("../npm");
 
@@ -15,7 +21,7 @@ await build({
   outDir: "../npm",
   package: {
     name: "hexterm",
-    version: "2.0.1",
+    version: version as string,
     description: "Convert hex colors to closest xterm",
     main: "esm/hexterm.js",
     license: "MIT",
