@@ -6,8 +6,7 @@ It works in Node.js, Deno and browsers
 
 [![Build Status](https://travis-ci.org/jacoborus/hexterm.svg?branch=master)](https://travis-ci.org/jacoborus/hexterm)
 [![npm version](https://badge.fury.io/js/hexterm.svg)](https://www.npmjs.com/package/hexterm)
-[![deno version](https://shield.deno.dev/x/buckets)](https://deno.land/x/hexterm)
-
+[![deno version](https://shield.deno.dev/x/hexterm)](https://deno.land/x/hexterm)
 
 ## Usage
 
@@ -20,7 +19,7 @@ npm install hexterm
 
 ```js
 // deno
-import { hexterm } from 'https://deno.land/x/hexterm/src/hexterm.ts'
+import { hexterm } from "https://deno.land/x/hexterm/src/hexterm.ts";
 // node.js
 import { hexterm } from "hexterm";
 
