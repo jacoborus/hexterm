@@ -25,7 +25,7 @@ await build({
     description: "Convert hex colors to closest xterm",
     main: "esm/hexterm.js",
     bin: {
-      hexterm: "./bin/hexterm"
+      hexterm: "./bin/hexterm",
     },
     license: "MIT",
     author: "Jacobo Tabernero - http://jacoborus.codes",
