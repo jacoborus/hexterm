@@ -1,7 +1,7 @@
 import { build, emptyDir } from "https://deno.land/x/dnt@0.40.0/mod.ts";
-import jsr from "../jsr.json" with { type: "json" };
+import denojson from "../deno.json" with { type: "json" };
 
-const version = jsr.version;
+const version = denojson.version;
 await emptyDir("./npm");
 
 await build({
