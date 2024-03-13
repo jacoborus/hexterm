@@ -2,7 +2,7 @@ import { build, emptyDir } from "https://deno.land/x/dnt@0.40.0/mod.ts";
 import jsr from "../jsr.json" with { type: "json" };
 
 const version = jsr.version;
-await emptyDir("../npm");
+await emptyDir("./npm");
 
 await build({
   typeCheck: "single",
@@ -13,7 +13,7 @@ await build({
     deno: false,
   },
   entryPoints: ["./src/hexterm.ts"],
-  outDir: "../npm",
+  outDir: "./npm",
 
   package: {
     name: "hexterm",
@@ -42,9 +42,9 @@ await build({
   },
 
   postBuild() {
-    Deno.mkdirSync("../npm/bin", { recursive: true });
-    Deno.copyFileSync("src/bin/hexterm", "../npm/bin/hexterm");
-    Deno.copyFileSync("LICENSE", "../npm/LICENSE");
-    Deno.copyFileSync("README.md", "../npm/README.md");
+    Deno.mkdirSync("./npm/bin", { recursive: true });
+    Deno.copyFileSync("src/bin/hexterm", "./npm/bin/hexterm");
+    Deno.copyFileSync("LICENSE", "./npm/LICENSE");
+    Deno.copyFileSync("README.md", "./npm/README.md");
   },
 });

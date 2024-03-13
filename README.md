@@ -63,6 +63,11 @@ deno test
 
 ## Development
 
+To build npm compatible module:
+
+```sh
+deno task build-npm
+```
 
 ---
 
