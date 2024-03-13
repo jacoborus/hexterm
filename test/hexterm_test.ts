@@ -2,7 +2,7 @@ import {
   assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.128.0/testing/asserts.ts";
-import { hexterm } from "./hexterm.ts";
+import { hexterm } from "../src/hexterm.ts";
 
 Deno.test("get closest xterm color", async (t) => {
   await t.step("no numeral values", () => {

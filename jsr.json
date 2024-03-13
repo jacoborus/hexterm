@@ -1,0 +1,8 @@
+{
+  "name": "@jacoborus/hexterm",
+  "version": "2.1.0",
+  "exports": {
+    ".": "./src/hexterm.ts",
+    "cli": "./src/cli.ts"
+  }
+}

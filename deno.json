@@ -1,0 +1,10 @@
+{
+  "name": "@jacoborus/hexterm",
+  "exports": {
+    ".": "./src/hexterm.ts",
+    "cli": "./src/cli.ts"
+  },
+  "tasks": {
+    "build-npm": "deno run -A src/build_npm.ts"
+  }
+}

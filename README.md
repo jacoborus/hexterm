@@ -4,22 +4,16 @@ Get the xterm closest color to a hexadecimal color.
 
 It works in Node.js, Deno and browsers
 
-[![Build Status](https://travis-ci.org/jacoborus/hexterm.svg?branch=master)](https://travis-ci.org/jacoborus/hexterm)
+[![JSR](https://jsr.io/badges/@jacoborus/hexterm)](https://jsr.io/@jacoborus/hexterm)
 [![npm version](https://badge.fury.io/js/hexterm.svg)](https://www.npmjs.com/package/hexterm)
-[![deno version](https://shield.deno.dev/x/hexterm)](https://deno.land/x/hexterm)
 
 ## Usage
 
 ### Programatically
 
-```sh
-# only node.js
-npm install hexterm
-```
-
 ```js
 // deno
-import { hexterm } from "https://deno.land/x/hexterm/src/hexterm.ts";
+import { hexterm } from "jsr:@jacoborus/hexterm";
 // node.js
 import { hexterm } from "hexterm";
 
@@ -36,7 +30,7 @@ Install globally
 
 ```sh
 # deno
-deno install -n hexterm https://deno.land/x/hexterm/src/cli.ts
+deno install -n hexterm jsr:@jacoborus/hexterm/cli
 
 # node
 npm install -g hexterm
@@ -62,21 +56,15 @@ npx hexterm 005fd7
 
 ## Test
 
-Install dev-dependencies and run tests
 
 ```sh
-npm install && npm tst
+deno test
 ```
 
 ## Development
 
-Use [VR (Velociraptor)](https://velociraptor.run/) to run the scripts.
-
-```sh
-vr build # builds npm module in npm folder
-```
 
 ---
 
-© 2016-2020 [Jacobo Tabernero](https://github.com/jacoborus) - Released under
+© 2016-2024 [Jacobo Tabernero](https://github.com/jacoborus) - Released under
 [MIT License](https://raw.github.com/jacoborus/hexterm/master/LICENSE)
