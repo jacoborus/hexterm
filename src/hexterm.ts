@@ -2,6 +2,17 @@ type Cache = Record<string, number>;
 
 const cache = {} as Cache;
 
+/**
+ * Confirms a string is a valid hexadecimal color.
+ *
+ * @param color - A hexadecimal color code without the hash (#)
+ * @returns Color is hexadecimal
+ * @example
+ * ```ts
+ * isHexColor("ffa") // true
+ * isHexColor("fta") // false
+ * ```
+ */
 export function isHexColor(color: string): boolean {
   return /^([0-9A-F]{6}|[0-9A-F]{3})$/i.test(color);
 }
@@ -32,6 +43,17 @@ interface Closest {
   x: number;
 }
 
+/**
+ * Get the closest xterm color to a given hex color.
+ *
+ * @param hex A hexadecimal color code
+ * @returns The number of the xterm color
+ * @example
+ * ```ts
+ * hexterm("#005fd7"); // 2asdfasdf6
+ * hexterm("ff0"); // 11
+ * ```
+ */
 export function hexterm(hex: string): number {
   if (typeof hex !== "string") {
     throw new Error("hex value has to be a string");

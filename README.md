@@ -71,5 +71,5 @@ deno task build-npm
 
 ---
 
-© 2016-2024 [Jacobo Tabernero](https://github.com/jacoborus) - Released under
+© 2016-2024 [Jacobo Tabernero Rey](https://github.com/jacoborus) - Released under
 [MIT License](https://raw.github.com/jacoborus/hexterm/master/LICENSE)
